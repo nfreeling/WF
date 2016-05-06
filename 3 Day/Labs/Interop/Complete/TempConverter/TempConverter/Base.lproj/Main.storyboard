@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMN-67-Yuk">
+                                <rect key="frame" x="525" y="49" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzE-9v-ECX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-fP-8BZ">
+                                <rect key="frame" x="20" y="96" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="100" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-HB-5jf">
+                                <rect key="frame" x="20" y="49" width="376" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-Uq-DtH">
+                                <rect key="frame" x="20" y="125" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPN-pu-feE">
+                                <rect key="frame" x="20" y="154" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xyf-Sg-mwW">
+                                <rect key="frame" x="417" y="50" width="92" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="ºF"/>
+                                    <segment title="ºC"/>
+                                    <segment title="ºK"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="gNR-HB-5jf" secondAttribute="leading" id="2pQ-ei-dIP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ja-fP-8BZ" secondAttribute="trailing" id="58D-ck-Yv8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZMN-67-Yuk" secondAttribute="trailing" id="89w-fW-m1G"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cRA-Uq-DtH" secondAttribute="leading" id="A12-iA-hh9"/>
+                            <constraint firstItem="TPN-pu-feE" firstAttribute="top" secondItem="cRA-Uq-DtH" secondAttribute="bottom" constant="8" id="BmL-5S-181"/>
+                            <constraint firstItem="ZMN-67-Yuk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="H21-eO-hH6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4ja-fP-8BZ" secondAttribute="leading" id="LDN-PB-hDQ"/>
+                            <constraint firstItem="gNR-HB-5jf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="Stq-NH-J9x"/>
+                            <constraint firstItem="4ja-fP-8BZ" firstAttribute="top" secondItem="gNR-HB-5jf" secondAttribute="bottom" constant="17" id="X1a-ad-N1Z"/>
+                            <constraint firstItem="cRA-Uq-DtH" firstAttribute="top" secondItem="4ja-fP-8BZ" secondAttribute="bottom" constant="8" id="Xcr-1J-A6q"/>
+                            <constraint firstItem="ZMN-67-Yuk" firstAttribute="leading" secondItem="Xyf-Sg-mwW" secondAttribute="trailing" constant="16" id="Y09-Wh-XCu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TPN-pu-feE" secondAttribute="leading" id="YD9-TG-9NF"/>
+                            <constraint firstItem="Xyf-Sg-mwW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="gkg-Iu-FeC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TPN-pu-feE" secondAttribute="trailing" id="m90-kw-vQc"/>
+                            <constraint firstItem="Xyf-Sg-mwW" firstAttribute="leading" secondItem="gNR-HB-5jf" secondAttribute="trailing" constant="21" id="tA5-vs-mdZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cRA-Uq-DtH" secondAttribute="trailing" id="utg-64-QEh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cResultLabel" destination="cRA-Uq-DtH" id="Ref-jA-OOn"/>
+                        <outlet property="fResultLabel" destination="4ja-fP-8BZ" id="mp7-hj-bfa"/>
+                        <outlet property="kResultLabel" destination="TPN-pu-feE" id="nfp-fa-c2t"/>
+                        <outlet property="scaleSegControl" destination="Xyf-Sg-mwW" id="y8Z-Rc-5J7"/>
+                        <outlet property="tempField" destination="gNR-HB-5jf" id="Bzz-Bu-c5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
